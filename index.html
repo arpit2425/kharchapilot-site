@@ -27,7 +27,8 @@
     .hero{background:linear-gradient(135deg,var(--indigo),var(--violet));color:#fff;border-radius:28px;padding:64px 32px;text-align:center;margin-top:8px;position:relative;overflow:hidden}
     .hero::before{content:"";position:absolute;top:-80px;right:-80px;width:260px;height:260px;background:rgba(255,255,255,.1);border-radius:50%}
     .hero img{width:96px;height:96px;border-radius:22px;margin-bottom:20px;position:relative}
-    .hero h1{font-size:40px;font-weight:800;line-height:1.15;position:relative}
+    .hero h1{font-size:46px;font-weight:800;line-height:1.1;position:relative;letter-spacing:-.5px}
+    .hero .lead{font-size:22px;font-weight:700;opacity:.95;margin-top:6px;position:relative}
     .hero p{font-size:18px;opacity:.92;max-width:640px;margin:16px auto 0;position:relative}
     .tag{display:inline-block;margin-top:24px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:8px 16px;border-radius:999px;font-size:13px;font-weight:600;position:relative}
 
@@ -61,10 +62,23 @@
 
     <div class="hero">
       <img src="logo.png" alt="KharchaPilot">
-      <h1>Your expenses, on autopilot.</h1>
+      <h1>KharchaPilot</h1>
+      <p class="lead">Your expenses, on autopilot.</p>
       <p>KharchaPilot automatically captures your bank &amp; UPI transaction SMS right on your phone, and turns them into organised, categorised expenses — no manual typing.</p>
       <span class="tag">Android · Private &amp; local-first · Optional Google Drive backup</span>
     </div>
+
+    <section id="about">
+      <h2>About KharchaPilot</h2>
+      <p class="sub">KharchaPilot is a personal expense-manager app for Android. Its purpose is to help
+      you track your spending effortlessly: it reads your bank and UPI <strong>transaction SMS on your
+      device</strong>, turns them into categorised expense entries you review and approve, and gives you
+      budgets, reports and insights. KharchaPilot is <strong>local-first</strong> — your data is stored on
+      your phone. If you choose to enable cloud backup, the app uses Google Drive access (the
+      <em>drive.appdata</em> scope) <strong>solely to store your own private backup file in your own Google
+      Drive</strong>, so you can restore your data on a new device. The app has no server and the developer
+      never receives or stores your data.</p>
+    </section>
 
     <section id="features">
       <h2>What it does</h2>
