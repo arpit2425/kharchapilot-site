@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KharchaPilot — Auto expense tracker for UPI & bank SMS</title>
+  <meta name="description" content="KharchaPilot automatically captures your bank & UPI transaction SMS on your device and turns them into organised expenses. Private, local-first, with optional backup to your own Google Drive.">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --indigo:#4F46E5; --violet:#7C3AED; --ink:#0F172A; --muted:#64748B;
+      --bg:#F8FAFC; --card:#FFFFFF; --border:#E2E8F0;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+    a{color:var(--indigo);text-decoration:none}
+    .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+
+    header{padding:20px 0;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px}
+    .brand img{width:40px;height:40px;border-radius:10px}
+    nav a{margin-left:20px;color:var(--muted);font-weight:600;font-size:14px}
+
+    .hero{background:linear-gradient(135deg,var(--indigo),var(--violet));color:#fff;border-radius:28px;padding:64px 32px;text-align:center;margin-top:8px;position:relative;overflow:hidden}
+    .hero::before{content:"";position:absolute;top:-80px;right:-80px;width:260px;height:260px;background:rgba(255,255,255,.1);border-radius:50%}
+    .hero img{width:96px;height:96px;border-radius:22px;margin-bottom:20px;position:relative}
+    .hero h1{font-size:40px;font-weight:800;line-height:1.15;position:relative}
+    .hero p{font-size:18px;opacity:.92;max-width:640px;margin:16px auto 0;position:relative}
+    .tag{display:inline-block;margin-top:24px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:8px 16px;border-radius:999px;font-size:13px;font-weight:600;position:relative}
+
+    section{padding:56px 0}
+    h2{font-size:26px;font-weight:800;text-align:center;margin-bottom:8px}
+    .sub{text-align:center;color:var(--muted);max-width:620px;margin:0 auto 36px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px}
+    .card h3{font-size:17px;margin-bottom:6px}
+    .card p{color:var(--muted);font-size:14px}
+    .ico{width:42px;height:42px;border-radius:12px;background:#EEF2FF;color:var(--indigo);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+
+    .privacy{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:36px}
+    .privacy ul{list-style:none;margin-top:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .privacy li{padding-left:26px;position:relative;color:var(--ink);font-size:15px}
+    .privacy li::before{content:"✓";position:absolute;left:0;color:#10B981;font-weight:800}
+
+    footer{border-top:1px solid var(--border);padding:32px 0;color:var(--muted);font-size:14px;text-align:center}
+    footer a{font-weight:600}
+
+    @media(max-width:600px){.hero h1{font-size:30px}.hero{padding:48px 20px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><img src="logo.png" alt="KharchaPilot logo">KharchaPilot</div>
+      <nav><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="privacy.html">Privacy Policy</a></nav>
+    </header>
+
+    <div class="hero">
+      <img src="logo.png" alt="KharchaPilot">
+      <h1>Your expenses, on autopilot.</h1>
+      <p>KharchaPilot automatically captures your bank &amp; UPI transaction SMS right on your phone, and turns them into organised, categorised expenses — no manual typing.</p>
+      <span class="tag">Android · Private &amp; local-first · Optional Google Drive backup</span>
+    </div>
+
+    <section id="features">
+      <h2>What it does</h2>
+      <p class="sub">Everything a personal expense manager needs — with automatic capture as the headline.</p>
+      <div class="grid">
+        <div class="card"><div class="ico">📩</div><h3>Auto-capture from SMS</h3><p>Detects bank &amp; UPI transaction SMS on-device and extracts amount, merchant, date and type. OTPs and promos are ignored.</p></div>
+        <div class="card"><div class="ico">✅</div><h3>Review &amp; categorise</h3><p>Each captured transaction is a quick Approve / Edit / Ignore. Auto-rules can pre-categorise or auto-approve.</p></div>
+        <div class="card"><div class="ico">📊</div><h3>Budgets &amp; reports</h3><p>Monthly budgets, accounts &amp; transfers, category insights, and CSV / PDF export.</p></div>
+        <div class="card"><div class="ico">🔒</div><h3>Private by design</h3><p>Your data stays in a local database on your phone. No developer server. Optional biometric app lock.</p></div>
+        <div class="card"><div class="ico">☁️</div><h3>Your own Google Drive</h3><p>Opt in to back up to <em>your</em> private Google Drive app folder — auto-backup and restore. We never receive your data.</p></div>
+        <div class="card"><div class="ico">🇮🇳</div><h3>Built for India</h3><p>UPI &amp; major bank SMS formats, ₹ Indian number formatting, and recurring transactions.</p></div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="privacy">
+        <h2>Your data stays yours</h2>
+        <p class="sub">KharchaPilot is local-first and collects nothing.</p>
+        <ul>
+          <li>SMS are parsed entirely on your device</li>
+          <li>Transactions are stored locally on your phone</li>
+          <li>We run no server and collect no personal data</li>
+          <li>Optional backup goes to your own Google Drive</li>
+          <li>SMS content is never uploaded anywhere</li>
+          <li>You can delete your data anytime</li>
+        </ul>
+        <p style="margin-top:22px"><a href="privacy.html">Read the full Privacy Policy →</a></p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <p>© <span id="yr"></span> KharchaPilot · Built by Arpit Trivedi</p>
+      <p style="margin-top:6px">Contact: <a href="mailto:arpittrivedi2425@gmail.com">arpittrivedi2425@gmail.com</a> · <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

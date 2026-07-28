@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — KharchaPilot</title>
+  <meta name="description" content="KharchaPilot privacy policy: local-first, on-device SMS processing, no data collection, optional backup to the user's own Google Drive.">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--indigo:#4F46E5;--ink:#0F172A;--muted:#475569;--bg:#F8FAFC;--border:#E2E8F0}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}
+    .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+    header{padding:22px 0;display:flex;align-items:center;gap:12px;font-weight:800;font-size:19px}
+    header img{width:36px;height:36px;border-radius:9px}
+    header a{margin-left:auto;font-size:14px;font-weight:600;color:var(--indigo);text-decoration:none}
+    .doc{background:#fff;border:1px solid var(--border);border-radius:20px;padding:40px;margin:8px 0 48px}
+    h1{font-size:30px;font-weight:800;margin-bottom:6px}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:24px}
+    h2{font-size:19px;font-weight:700;margin:26px 0 8px}
+    h3{font-size:16px;font-weight:700;margin:18px 0 4px}
+    p,li{color:var(--ink);font-size:15px}
+    ul{margin:8px 0 8px 22px}
+    li{margin-bottom:6px}
+    .callout{background:#EEF2FF;border:1px solid #C7D2FE;border-radius:12px;padding:14px 16px;margin:16px 0;font-size:14px}
+    a{color:var(--indigo)}
+    footer{color:var(--muted);font-size:13px;text-align:center;padding-bottom:40px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="logo.png" alt="KharchaPilot"><span>KharchaPilot</span>
+      <a href="index.html">← Home</a>
+    </header>
+
+    <div class="doc">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: 28 July 2026 · Effective: 28 July 2026</p>
+
+      <p><strong>KharchaPilot</strong> ("the app", "we", "us") is a personal expense-manager
+      Android application published by <strong>Arpit Trivedi</strong> ("the developer").
+      This policy explains what the app accesses, how it is used, and your choices.
+      Contact: <a href="mailto:arpittrivedi2425@gmail.com">arpittrivedi2425@gmail.com</a>.</p>
+
+      <div class="callout">
+        <strong>Summary:</strong> The app is local-first — your financial data is stored on your
+        device. We operate no server and do not collect, receive, transmit, sell, or share any of
+        your personal data. SMS are processed entirely on your device. Cloud backup is optional and
+        goes to your own Google Drive, under your own Google account — not to us.
+      </div>
+
+      <h2>1. Information the app accesses</h2>
+
+      <h3>a) SMS messages (optional feature)</h3>
+      <p>If you enable SMS capture and grant the SMS permission, the app reads incoming and existing
+      SMS <strong>on your device</strong> to identify bank/UPI <strong>transaction</strong> messages
+      and extract details (amount, merchant/payee, reference, account last-4 digits, debit/credit,
+      date). This processing happens locally using on-device logic. SMS content is
+      <strong>never sent to the developer or any third party</strong> and is not uploaded anywhere
+      by the app (it is not part of the optional Drive backup). Non-transaction messages (OTPs,
+      personal messages, promotions) are ignored. You can use the app fully without granting this
+      permission by entering transactions manually.</p>
+
+      <h3>b) Financial/transaction data you create</h3>
+      <p>Transactions, categories, budgets, accounts, and related data are stored in a local database
+      on your device. This is the source of truth.</p>
+
+      <h3>c) Google account (optional, for backup)</h3>
+      <p>If you enable Google Drive backup, you sign in with Google. The app requests the
+      <strong>drive.appdata</strong> scope, which lets it read/write <strong>only its own private
+      folder</strong> in <strong>your</strong> Google Drive. Your backup file is stored in your Google
+      Drive under your account. The developer has no access to your Google account or Drive contents.
+      Google's handling of your account is governed by
+      <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+      <h3>d) Notifications</h3>
+      <p>The app may show local notifications (e.g., a captured transaction to review). These are
+      generated and shown on-device.</p>
+
+      <h2>2. How information is used</h2>
+      <p>Solely to provide the app's features on your device: capturing/organising expenses, budgets,
+      reports, and — if you enable it — backing up and restoring your data to your own Google Drive.</p>
+
+      <h2>3. Data sharing and selling</h2>
+      <p>We do <strong>not</strong> sell, rent, or share your personal data with anyone. We do not run
+      analytics or advertising SDKs, and we do not transmit your data to our servers (we have none).</p>
+
+      <h2>4. Data storage, retention, and deletion</h2>
+      <ul>
+        <li>Your data lives on your device for as long as the app is installed. Uninstalling the app removes its local data.</li>
+        <li>You can delete individual records in-app, and use <em>Data &amp; storage → delete old data</em> to remove older records locally.</li>
+        <li>If you used Drive backup, you can delete the backup from your Google Drive (Drive → Settings → Manage apps → KharchaPilot), and sign out in the app.</li>
+      </ul>
+
+      <h2>5. Security</h2>
+      <p>Data is stored within the app's private storage on your device. Backups reside in your private
+      Google Drive app folder. Optionally, enable your device lock / the app's biometric lock for
+      additional protection.</p>
+
+      <h2>6. Children</h2>
+      <p>The app is not directed at children under 13 and does not knowingly collect data from them.</p>
+
+      <h2>7. Permissions summary</h2>
+      <ul>
+        <li><strong>SMS (RECEIVE_SMS, READ_SMS)</strong> — optional; on-device transaction detection.</li>
+        <li><strong>Notifications (POST_NOTIFICATIONS)</strong> — show review/alert notifications.</li>
+        <li><strong>Internet / Network state</strong> — only to sync with your Google Drive when you enable backup.</li>
+        <li><strong>Biometric</strong> — optional app lock.</li>
+      </ul>
+
+      <h2>8. Changes to this policy</h2>
+      <p>We may update this policy; changes will be posted at this URL with a new "Last updated" date.</p>
+
+      <h2>9. Contact</h2>
+      <p>Questions? Contact Arpit Trivedi at
+      <a href="mailto:arpittrivedi2425@gmail.com">arpittrivedi2425@gmail.com</a>.</p>
+    </div>
+
+    <footer>© <span id="yr"></span> KharchaPilot</footer>
+  </div>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
